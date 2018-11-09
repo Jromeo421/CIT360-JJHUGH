@@ -1,8 +1,9 @@
 
 // Java program to demonstrate working of Map interface 
 import java.util.*; 
-import java.util.function.Consumer;
-class HashMapDemo 
+
+
+class MapCollaction 
 { 
    public static void main(String args[]) 
    { 
