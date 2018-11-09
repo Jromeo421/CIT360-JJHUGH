@@ -4,14 +4,14 @@ public class SetsCollection {
 
   public static void main(String args[]) { 
      int count[] = {5,10,15,20,25,30};
-     Set<Integer> setList = new HashSet<Integer>();
+     Set<Integer> setList = new HashSet<>();
      try{
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i<5; i++){
            setList.add(count[i]);
         }
         System.out.println(setList);
   
-        TreeSet<Integer> sortedSet = new TreeSet<Integer>(setList);
+        TreeSet<Integer> sortedSet = new TreeSet<>();
         System.out.println("The sorted List is " + sortedSet);
       
 
