@@ -10,10 +10,10 @@ public class LinkedListCollection {
                 
 		List children = new LinkedList<>();
 
-                    children.add("Kiana Marie");
-                    children.add("Pyper Lynn");
-                    children.add(0, "Paizley Jane");
-                    children.add(3, "Jordyn Elsie");
+                    children.add("\nKiana Marie");
+                    children.add("\nPyper Lynn");
+                    children.add(0, "\nPaizley Jane");
+                    children.add(3, "\nJordyn Elsie");
 
 	      System.out.println("\nMy kids names are ");
 	      System.out.println(children);     
