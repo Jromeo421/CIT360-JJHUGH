@@ -9,20 +9,20 @@ class SetsCollection {
         HashSet<String> Chores = new HashSet<>(); 
   
         // add elements to HashSet 
-        Chores.add("\nMopping"); 
-        Chores.add("\nSweeping"); 
-        Chores.add("\nWiping"); 
-        Chores.add("\nDusting"); 
-        Chores.add("\nWiping");
-        Chores.add("\nTaking out Trash");
+        Chores.add("Mopping"); 
+        Chores.add("Sweeping"); 
+        Chores.add("Wiping"); 
+        Chores.add("Dusting"); 
+        Chores.add("Wiping");
+        Chores.add("Taking out Trash");
   
         // Duplicate removed 
-        Chores.add("wiping"); 
+        Chores.remove("wiping"); 
   
         // Displaying HashSet elements 
-        System.out.println("Hash Set has "); 
-        Chores.forEach((temp) -> {
-            System.out.println(temp);
+        System.out.println("Chores Set"); 
+        Chores.forEach((explain) -> {
+            System.out.println(explain);
         }); 
     } 
 } 
