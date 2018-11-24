@@ -97,7 +97,7 @@ public class JSONExercise {
            
             for (int i = 0; i < coursesIn.size(); i++){
                 JSONObject courseIn = (JSONObject) coursesIn.get(i);
-                long gradeIn = (int) courseIn.get("grade");
+                long gradeIn = (long) courseIn.get("grade");
                 String nameIn = (String) courseIn.get("name");
                 
                 System.out.printf("Course %s; grade %d\n", nameIn, gradeIn);
