@@ -55,8 +55,8 @@ public class JSONExercise {
         }
         //create a JSON array and store a class object.
         JSONObject courseObject = new JSONObject();
-        courseObject.put("grade ", grade);
-        courseObject.put("course ", course);
+        courseObject.put("grade", grade);
+        courseObject.put("name", course);
         
         //adding the course to the array.
         courses.add(courseObject);
@@ -91,7 +91,7 @@ public class JSONExercise {
             JSONParser parser = new JSONParser();
             
             JSONObject objRoot = (JSONObject) parser.parse(jsonIn.toString());
-            System.out.printf("Student name is %s\n", objRoot.get("name").toString());
+            System.out.printf("\nStudent name is %s\n", objRoot.get("name").toString());
             JSONArray coursesIn = (JSONArray) objRoot.get("courses");
             
             for (int i = 0; i < coursesIn.size(); i++){
@@ -106,5 +106,5 @@ public class JSONExercise {
         } catch (ParseException ex) {
             System.out.println(ex.toString());
         }
-        }
     }
+}
