@@ -81,8 +81,11 @@ public class JSONExercise {
         
         try {
             input = new Scanner(file);
+            
             StringBuilder jsonIn = new StringBuilder();
+            
             while(input.hasNextLine()){
+                
                 jsonIn.append(input.nextLine());
             }
             System.out.print(jsonIn.toString());
@@ -90,16 +93,13 @@ public class JSONExercise {
             JSONParser parser = new JSONParser();
             
             JSONObject objRoot = (JSONObject) parser.parse(jsonIn.toString());
-            
             System.out.printf("Student name is %s\n", objRoot.get("name").toString());
-            
             JSONArray coursesIn = (JSONArray) objRoot.get("courses");
-           
+            
             for (int i = 0; i < coursesIn.size(); i++){
                 JSONObject courseIn = (JSONObject) coursesIn.get(i);
                 long gradeIn = (long) courseIn.get("grade");
                 String nameIn = (String) courseIn.get("name");
-                
                 System.out.printf("Course %s; grade %d\n", nameIn, gradeIn);
                 }
             
