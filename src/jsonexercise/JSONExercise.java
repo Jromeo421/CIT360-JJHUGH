@@ -9,8 +9,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.json.simple.*;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -58,7 +56,7 @@ public class JSONExercise {
         //create a JSON array and store a class object.
         JSONObject courseObject = new JSONObject();
         courseObject.put("grade ", grade);
-        courseObject.put("name ", course);
+        courseObject.put("course ", course);
         
         //adding the course to the array.
         courses.add(courseObject);
